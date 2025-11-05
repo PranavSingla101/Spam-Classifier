@@ -87,3 +87,15 @@ git branch -M main
 git remote add origin <your-repo-url>
 git push -u origin main
 ```
+
+## Results comparison
+
+| Model                   | Train Accuracy | Test Accuracy |
+|-------------------------|----------------|---------------|
+| Logistic Regression     | 96.77%         | 96.68%        |
+| Multinomial Naive Bayes | 98.07%         | 97.31%        |
+| Random Forest           | 100.00%        | 97.67%        |
+
+Notes:
+- Random Forest reaches perfect training accuracy, which suggests some overfitting relative to the linear models.
+- On test data, Random Forest slightly leads; all models generalize well with TF‑IDF features.
